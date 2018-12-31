@@ -80,7 +80,7 @@ RUN set -ex \
 
 ENV BUNDLER_VERSION 1.17.1
 
-RUN gem install bundler --version "$BUNDLER_VERSION"
+RUN gem install bundler --version "$BUNDLER_VERSION" --force
 
 # install things globally, for great justice
 # and don't create ".bundle" in all our apps
